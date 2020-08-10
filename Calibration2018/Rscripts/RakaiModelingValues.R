@@ -48,8 +48,6 @@ table(rakaidata_coverage.w$agegroup)
 
 ###################################################################
 #Data for EMOD calibration
-setwd("C:\\Users\\aakullian\\Dropbox (IDM)\\HIV\\EMOD\\Rakai\\Data")
-
 rakaidata_coverage.l <- reshape(rakaidata_coverage.w, 
              varying = c("el_popsize", "hivprev", "pt_popsize", "hivsize", "artsize", "circsize", "circsize_hivneg", "circsize_hivpos","mccoverage", "artcoverage"), 
              v.names = "value",
