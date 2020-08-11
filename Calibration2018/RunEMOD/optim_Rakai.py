@@ -28,7 +28,7 @@ SetupParser.default_block= "HPC"
 #
 
 # The excel file with parameter, analyzer, and reference data to parse
-ingest_xlsm_filename = os.path.join('Data', 'calibration_ingest_form-Rakai_v3.xlsm')
+ingest_xlsm_filename = os.path.join('Data', 'calibration_ingest_form-Rakai_v4.xlsm')
 
 # params is a dict like below, reference is a PopulationObs object, analyzers is a dictionary of AnalyzerClass: WEIGHT
 params, reference, analyzers = parse_ingest_data_from_xlsm(filename=ingest_xlsm_filename)
@@ -60,8 +60,8 @@ plotters = [
 # Setting up our model configuration from templates
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-template_files_dir = os.path.join(dir_path, 'InputFiles_Oct18', 'Templates')
-static_files_dir = os.path.join(dir_path, 'InputFiles_Oct18', 'Static')
+template_files_dir = os.path.join(dir_path, 'Templates')
+static_files_dir = os.path.join(dir_path, 'Static')
 
 demog = DemographicsTemplate.from_file( os.path.join(static_files_dir,'Rakai_Demographics_With_Properties.json') )
 demog_pfa = DemographicsTemplate.from_file( os.path.join(template_files_dir, 'PFA_Overlay.json') )
