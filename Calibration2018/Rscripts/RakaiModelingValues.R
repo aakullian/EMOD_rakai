@@ -4,12 +4,13 @@
 #START date 10/15/2018
 ####################################################################################################################
 library(tidyr)
+library(ggplot2)
 setwd("C:\\Users\\aakullian\\Dropbox (IDM)\\GitHub\\EMOD_rakai\\Calibration2018\\Data")
 load("whopico_modeling_rakaidata.rda")
 
 ####################################################################################################################
 head(rakaidata_coverage,20)
-names(rakaidata_coverage)
+summary(rakaidata_coverage)
 
 table(rakaidata_coverage$agegroup)
 
